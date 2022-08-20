@@ -15,6 +15,6 @@ function removeOpenedClassFromHeaderList() {
   const headerListIsOpened = !!document.querySelector('.header__list--opened');
   
   if (headerListIsOpened) {
-    headerListElement.classList.remove('header__list--opened')
+    headerListElement.classList.remove('header__list--opened');
   }
 }

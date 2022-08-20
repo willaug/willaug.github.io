@@ -18,17 +18,35 @@
   <header class="header">
     <div class="header__logo">
       <div class="header__logo-icon"></div>
-      <p class="header__logo-title" title="This is my name!">William Augusto</p>
+      <p translate="no" class="header__logo-title" title="This is my name!">William Augusto</p>
     </div>
     <div class="header__menu" onclick="toggleHeaderList()">
       <i class="fa fa-solid fa-bars"></i>
     </div>
     <div class="header__list">
-      <a class="header__list_line" href="/#about" onclick="removeOpenedClassFromHeaderList()">About</a>
-      <a class="header__list_line" href="/#services" onclick="removeOpenedClassFromHeaderList()">Services</a>
-      <a class="header__list_line" href="/#contact" onclick="removeOpenedClassFromHeaderList()">Contact</a>
+      <a 
+        class="header__list_line"
+        href="/#about"
+        onclick="removeOpenedClassFromHeaderList()"
+        data-translate="HEADER.ABOUT"
+      >About</a>
+      <a 
+        class="header__list_line"
+        href="/#services"
+        onclick="removeOpenedClassFromHeaderList()"
+        data-translate="HEADER.SERVICES"
+      >Services</a>
+      <a
+        class="header__list_line"
+        href="/#contact"
+        onclick="removeOpenedClassFromHeaderList()"
+        data-translate="HEADER.CONTACT"
+      >Contact</a>
     </div>
   </header>
   <script src="./scripts/header.js"></script>
+  <script src="./scripts/i18n/english.js"></script>
+  <script src="./scripts/i18n/portuguese.js"></script>
+  <script src="./scripts/internationalization.js"></script>
 </body>
 </html>
