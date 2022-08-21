@@ -27,5 +27,8 @@ const PT_INTERNATIONALIZATION = {
       TITLE: 'Aplicações híbridas',
       DESCRIPTION: 'Já pensou em rodar uma aplicação em diversos dispositivos móveis, seja Iphone ou Android? Com uma aplicação híbrida é possível.'
     }
+  },
+  SKILLS: {
+    TITLE: 'Habilidades'
   }
 }

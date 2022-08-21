@@ -27,5 +27,8 @@ const EN_INTERNATIONALIZATION = {
       TITLE: 'Hybrids apps',
       DESCRIPTION: 'Have you ever thought about running an application on several mobile devices, whether iPhone or Android? With a hybrid application it is possible.'
     }
+  },
+  SKILLS: {
+    TITLE: 'Skills'
   }
 } 
