@@ -6,11 +6,14 @@ const PT_INTERNATIONALIZATION = {
     CONTACT: 'Contato'
   },
   PRESENTATION: {
+    TITLE: 'Contribuindo para construir experiências incríveis.'
+  },
+  ABOUT: {
     TITLE: 'Olá, eu sou o William',
     TEXT: 'Eu sou um desenvolvedor full-stack e um entusiasta do código limpo. Com minhas habilidades, busco contribuir com pessoas e empresas para atingir seus objetivos. Possuo, profissionalmente, mais de um ano de experiência e desde os quinze anos sou um "programming lover".',
     BUTTON: 'Bora trocar uma ideia?'
   },
-  ABOUT: {
+  SERVICES: {
     TITLE: 'O que faço',
     API: {
       TITLE: 'APIs',

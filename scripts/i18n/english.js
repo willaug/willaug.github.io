@@ -6,11 +6,14 @@ const EN_INTERNATIONALIZATION = {
     CONTACT: 'Contact'
   },
   PRESENTATION: {
+    TITLE: 'Contributing to build amazing experiences.'
+  },
+  ABOUT: {
     TITLE: 'Hi, I\'m William',
     TEXT: 'I\'m a full-stack developer and a clean code enthusiast. Through my skills, I seek to contribute with people and companies to achieve the expected goals. I\'ve been working professionally for over a year and I\'ve been a programming lover since I was fifteen.',
     BUTTON: 'Let\'s chat'
   },
-  ABOUT: {
+  SERVICES: {
     TITLE: 'What I do',
     API: {
       TITLE: 'APIs',
