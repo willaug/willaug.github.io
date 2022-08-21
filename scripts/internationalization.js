@@ -12,7 +12,8 @@ function _getBrowserLanguage() {
   return 'en';
 }
 
-function _translateTitle() {
+function _translateDocument() {
+  document.documentElement.setAttribute('lang', language === 'pt' ? 'pt-BR' : 'en-US');
   document.title = eval(`${language.toUpperCase()}_INTERNATIONALIZATION.TITLE`);
 }
 
@@ -24,10 +25,11 @@ function _setTranslation() {
     element.innerHTML = eval(
       `${language.toUpperCase()}_INTERNATIONALIZATION.${translateAttrValue}`
     );
+
   }
 }
 
 (() => {
   _setTranslation();
-  _translateTitle();
+  _translateDocument();
 })();

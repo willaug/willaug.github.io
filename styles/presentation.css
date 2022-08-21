@@ -1,0 +1,26 @@
+.presentation {
+  gap: 100px;
+  display: flex;
+  margin-top: 80px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.presentation .presentation__image {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.presentation .presentation__description .presentation__description-title {
+  font-weight: 700;
+  font-size: 47px;
+  color: var(--purple-color);
+}
+
+.presentation .presentation__description .presentation__description-text {
+  font-size: 23px;
+  font-weight: 400;
+  color: var(--white-secondary-color);
+}

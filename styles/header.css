@@ -2,6 +2,7 @@
   left: 50%;
   width: 100%;
   display: flex;
+  z-index: 3000;
   max-width: 1280px;
   position: relative;
   padding: 20px 15px;
@@ -36,12 +37,13 @@
 .header .header__list {
   gap: 45px;
   display: flex;
+  z-index: 9998;
   flex-direction: row;
   transition: all .8s ease-in-out;
 }
 
 .header .header__menu {
-  z-index: 3000;
+  z-index: 9999;
   display: none;
   cursor: pointer;
   font-size: 1.2rem;
@@ -51,8 +53,8 @@
 .header .header__list .header__list_line {
   font-size: 16px;
   font-weight: 500;
-  color: var(--white-color);
   text-decoration: none;
+  color: var(--white-color);
   transition: all .3s ease-in-out;
 }
 

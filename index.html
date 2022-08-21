@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,12 +9,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/variables.css">
   <link rel="stylesheet" href="./styles/root.css">
+  <link rel="stylesheet" href="./styles/loader.css">
   <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/presentation.css">
   <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
   <script src="https://kit.fontawesome.com/5b27a99c39.js" crossorigin="anonymous"></script>
   <title>William Augusto | Developer</title>
 </head>
 <body>
+
+  <div class="loader">
+    <div class="loader__lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+  </div>
+
   <header class="header">
     <div class="header__logo">
       <div class="header__logo-icon"></div>
@@ -44,9 +51,36 @@
       >Contact</a>
     </div>
   </header>
+  
+  <section class="container presentation">
+    <img 
+      class="presentation__image"
+      src="https://avatars.githubusercontent.com/u/75765439"
+      alt="William Augusto"
+    >
+
+    <div class="presentation__description">
+      <h1 class="presentation__description-title" data-translate="PRESENTATION.TITLE">
+        Hi, I'm William
+      </h1>
+      <h3 class="presentation__description-text" data-translate="PRESENTATION.TEXT">
+        I'm a full-stack developer and a clean code enthusiast. Through my skills, I seek to contribute with people and companies to achieve the expected goals. I've been working professionally for over a year and I've been a programming lover since I was fifteen.
+      </h3>
+    </div>
+  </section>
+
   <script src="./scripts/header.js"></script>
   <script src="./scripts/i18n/english.js"></script>
   <script src="./scripts/i18n/portuguese.js"></script>
   <script src="./scripts/internationalization.js"></script>
+  <script>
+    const loaderElement = document.querySelector('.loader');
+    setTimeout(() => {
+      loaderElement.style.opacity = 0;
+      setTimeout(() => {
+        loaderElement.style.display = 'none';
+      }, 1000);
+    }, 400);
+  </script>
 </body>
 </html>
