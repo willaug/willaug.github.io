@@ -11,9 +11,10 @@
   <link rel="stylesheet" href="./styles/root.css">
   <link rel="stylesheet" href="./styles/loader.css">
   <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/services.css">
   <link rel="stylesheet" href="./styles/presentation.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
-  <script src="https://kit.fontawesome.com/5b27a99c39.js" crossorigin="anonymous"></script>
   <title>William Augusto | Developer</title>
 </head>
 <body>
@@ -28,7 +29,7 @@
       <p translate="no" class="header__logo-title" title="This is my name!">William Augusto</p>
     </div>
     <div class="header__menu" onclick="toggleHeaderList()">
-      <i class="fa fa-solid fa-bars"></i>
+      <span class="material-icons">menu</span>
     </div>
     <div class="header__list">
       <a 
@@ -66,6 +67,53 @@
       <h3 class="presentation__description-text" data-translate="PRESENTATION.TEXT">
         I'm a full-stack developer and a clean code enthusiast. Through my skills, I seek to contribute with people and companies to achieve the expected goals. I've been working professionally for over a year and I've been a programming lover since I was fifteen.
       </h3>
+      <button class="presentation__description-button" type="button" data-translate="PRESENTATION.BUTTON">
+        Let's chat
+      </button>
+    </div>
+  </section>
+
+  <section class="container services">
+    <h2 class="services__title" data-translate="ABOUT.TITLE">What I do</h2>
+    
+    <div class="services__cards">
+    
+      <div class="services__cards_card">
+        <span class="services__cards_card-icon">
+          <span class="material-icons">api</span>
+        </span>
+        <p class="services__cards_card-title" data-translate="ABOUT.API.TITLE">
+          APIs
+        </p>
+        <p class="services__cards_card-description" data-translate="ABOUT.API.DESCRIPTION">
+          Through APIs, we can create platforms that communicate with other platforms.
+        </p>
+      </div>
+
+      <div class="services__cards_card">
+        <span class="services__cards_card-icon">
+          <span class="material-icons">web</span>
+        </span>
+        <p class="services__cards_card-title" data-translate="ABOUT.SPA.TITLE">
+          Web apps
+        </p>
+        <p class="services__cards_card-description" data-translate="ABOUT.SPA.DESCRIPTION">
+          With web applications, we can create platforms that behave similarly to an application.
+        </p>
+      </div>
+
+      <div class="services__cards_card">
+        <span class="services__cards_card-icon">
+          <span class="material-icons">phone_iphone</span>
+        </span>
+        <p class="services__cards_card-title" data-translate="ABOUT.PWA.TITLE">
+          Hybrids apps
+        </p>
+        <p class="services__cards_card-description" data-translate="ABOUT.PWA.DESCRIPTION">
+          Have you ever thought about running an application on several mobile devices, whether iPhone or Android? With a hybrid application it is possible.
+        </p>
+      </div>
+    
     </div>
   </section>
 
