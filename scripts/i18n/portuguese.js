@@ -4,6 +4,7 @@ const PT_INTERNATIONALIZATION = {
     ABOUT: 'Sobre',
     SERVICES: 'Serviços',
     SKILLS: 'Habilidades',
+    SOCIAL_MEDIA: 'Mídias sociais',
     CONTACT: 'Contato'
   },
   PRESENTATION: {
@@ -44,6 +45,10 @@ const PT_INTERNATIONALIZATION = {
       SEND: 'Enviar',
       ERR: 'Um erro inesperado ocorreu!'
     }
+  },
+  SOCIAL_MEDIA: {
+    TITLE: 'Mídias sociais',
+    CONTINUE: 'Abrir',
   },
   FOOTER: {
     TITLE: 'Desenvolvido com muito ❤️'

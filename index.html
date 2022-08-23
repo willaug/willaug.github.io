@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="./styles/services.css">
   <link rel="stylesheet" href="./styles/about.css">
   <link rel="stylesheet" href="./styles/skills.css">
+  <link rel="stylesheet" href="./styles/social-media.css">
   <link rel="stylesheet" href="./styles/contact.css">
   <link rel="stylesheet" href="./styles/footer.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -63,6 +64,12 @@
         onclick="removeOpenedClassFromHeaderList()"
         data-translate="HEADER.SKILLS"
       >Skills</a>
+      <a
+        class="header__list_line"
+        href="#socialMedia"
+        onclick="removeOpenedClassFromHeaderList()"
+        data-translate="HEADER.SOCIAL_MEDIA"
+      >Social Media</a>
       <a
         class="header__list_line"
         href="#contact"
@@ -181,6 +188,31 @@
       <div class="skills__cards_card">
         <img class="skills__cards_card-image" src="./images/css.svg" alt="CSS" title="CSS">
       </div>
+      <div class="skills__cards_card">
+        <img class="skills__cards_card-image" src="./images/git.svg" alt="GIT" title="GIT">
+      </div>
+    </div>
+  </section>
+
+  <section class="container social-media">
+    <h2 id="socialMedia" class="social-media__title" data-translate="SOCIAL_MEDIA.TITLE">Social Media</h2>
+
+    <div class="social-media__cards">
+      <a class="social-media__cards_card" href="https://github.com/willaug" target="_blank">
+        <img src="./images/github.svg" alt="GitHub" class="social-media__cards_card-image">
+        <div>
+          <p class="social-media__cards_card--title">GitHub</p>
+          <p class="social-media__cards_card--subtitle" data-translate="SOCIAL_MEDIA.CONTINUE">Go it!</p>
+        </div>
+      </a>
+      <a class="social-media__cards_card" href="https://www.linkedin.com/in/william-augusto/" target="_blank">
+        <img src="./images/linkedin.svg" alt="LinkedIn" class="social-media__cards_card-image">
+        <div>
+          <p class="social-media__cards_card--title">LinkedIn</p>
+          <p class="social-media__cards_card--subtitle" data-translate="SOCIAL_MEDIA.CONTINUE">Go it!</p>
+        </div>
+        
+      </a>
     </div>
   </section>
 

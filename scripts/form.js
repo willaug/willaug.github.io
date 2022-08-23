@@ -17,6 +17,10 @@ async function sendMail(event) {
   event.preventDefault();
 
   const [name, email, subject, message] = formElements.map(({ value }) => value);
+  if (!name || !email || !subject || !message) {
+    return;
+  }
+  
   const templateParams = {
     subject: subject,
     customer: name.toUpperCase(),

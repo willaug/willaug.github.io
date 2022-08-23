@@ -4,6 +4,7 @@ const EN_INTERNATIONALIZATION = {
     ABOUT: 'About',
     SERVICES: 'Services',
     SKILLS: 'Skills',
+    SOCIAL_MEDIA: 'Social media',
     CONTACT: 'Contact'
   },
   PRESENTATION: {
@@ -44,6 +45,10 @@ const EN_INTERNATIONALIZATION = {
       SEND: 'Send',
       ERR: 'An error has occurred!'
     }
+  },
+  SOCIAL_MEDIA: {
+    TITLE: 'Social Media',
+    CONTINUE: 'Go it',
   },
   FOOTER: {
     TITLE: 'Developed with much ❤️'
