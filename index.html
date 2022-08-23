@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="./styles/services.css">
   <link rel="stylesheet" href="./styles/about.css">
   <link rel="stylesheet" href="./styles/skills.css">
+  <link rel="stylesheet" href="./styles/contact.css">
+  <link rel="stylesheet" href="./styles/footer.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
   <title>William Augusto | Developer</title>
@@ -22,7 +24,7 @@
 <body>
 
   <div class="loader">
-    <div class="loader__lds-roller">
+    <div class="lds-roller">
       <div></div>
       <div></div>
       <div></div>
@@ -45,19 +47,25 @@
     <div class="header__list">
       <a 
         class="header__list_line"
-        href="/#about"
+        href="#about"
         onclick="removeOpenedClassFromHeaderList()"
         data-translate="HEADER.ABOUT"
       >About</a>
       <a 
         class="header__list_line"
-        href="/#services"
+        href="#services"
         onclick="removeOpenedClassFromHeaderList()"
         data-translate="HEADER.SERVICES"
       >Services</a>
+      <a 
+        class="header__list_line"
+        href="#skills"
+        onclick="removeOpenedClassFromHeaderList()"
+        data-translate="HEADER.SKILLS"
+      >Skills</a>
       <a
         class="header__list_line"
-        href="/#contact"
+        href="#contact"
         onclick="removeOpenedClassFromHeaderList()"
         data-translate="HEADER.CONTACT"
       >Contact</a>
@@ -77,21 +85,21 @@
       alt="William Augusto"
     >
 
-    <div class="about__description">
+    <div id="about" class="about__description">
       <h2 class="about__description-title" data-translate="ABOUT.TITLE">
         Hi, I'm William
       </h2>
       <h3 class="about__description-text" data-translate="ABOUT.TEXT">
         I'm a full-stack developer and a clean code enthusiast. Through my skills, I seek to contribute with people and companies to achieve the expected goals. I've been working professionally for over a year and I've been a programming lover since I was fifteen.
       </h3>
-      <button class="about__description-button" type="button" data-translate="ABOUT.BUTTON">
+      <a class="about__description-button" href="#contact" data-translate="ABOUT.BUTTON">
         Let's chat
-      </button>
+      </a>
     </div>
   </section>
 
   <section class="container services">
-    <h2 class="services__title" data-translate="SERVICES.TITLE">What I do</h2>
+    <h2 id="services" class="services__title" data-translate="SERVICES.TITLE">What I do</h2>
     
     <div class="services__cards">
     
@@ -135,7 +143,7 @@
   </section>
 
   <section class="container skills">
-    <h2 class="skills__title" data-translate="SKILLS.TITLE">Skills</h2>
+    <h2 id="skills" class="skills__title" data-translate="SKILLS.TITLE">Skills</h2>
     <div class="skills__cards">
       <div class="skills__cards_card">
         <img class="skills__cards_card-image" src="./images/javascript.svg" alt="JavaScript" title="JavaScript">
@@ -176,18 +184,85 @@
     </div>
   </section>
 
+  <section class="container contact">
+    <h2 id="contact" class="contact__title" data-translate="CONTACT.TITLE">Contact</h2>
+
+    <div>
+      <form onsubmit="sendMail(event)" action="#thankyou" class="contact__form">
+        <div class="contact__form_row">
+          <div class="contact__form_row__container" id="contactNameContainer">
+            <label class="contact__form_row__container-label" for="contactName" data-translate="CONTACT.FORM.NAME">Your name</label>
+            <input required class="contact__form_row__container-input" type="text" name="name" id="contactName" autocomplete="name">
+          </div>
+          <div class="contact__form_row__container" id="contactEmailContainer">
+            <label class="contact__form_row__container-label" for="contactEmail" data-translate="CONTACT.FORM.EMAIL">Your email</label>
+            <input required class="contact__form_row__container-input" type="email" name="email" id="contactEmail" autocomplete="email">
+          </div>
+        </div>
+        
+        <div class="contact__form_row mt-30 only-item-in-row">
+          <div class="contact__form_row__container" id="contactSubjectContainer">
+            <label class="contact__form_row__container-label" for="contactSubject" data-translate="CONTACT.FORM.SUBJECT">Subject</label>
+            <input required class="contact__form_row__container-input" type="text" name="subject" id="contactSubject" autocomplete="none">
+          </div>
+        </div>
+  
+        <div class="contact__form_row mt-30 only-item-in-row">
+          <div class="contact__form_row__container" id="contactMessageContainer">
+            <label class="contact__form_row__container--textarea-label" for="contactMessage" data-translate="CONTACT.FORM.MESSAGE">Message</label>
+            <textarea required rows="3" class="contact__form_row__container-textarea" name="message" id="contactMessage" autocomplete="none"></textarea>
+          </div>
+        </div>
+  
+        <div class="mt-30 contact__form_flex">
+          <p class="contact__form_flex-err" data-translate="CONTACT.FORM.ERR">
+            An error has occurred!
+          </p>
+          <button data-translate="CONTACT.FORM.SEND" class="contact__form_flex-submit" type="submit">
+            Send
+          </button>
+        </div>
+
+        <div class="contact__loading">
+          <div class="contact__loading-loader">
+            <div class="lds-roller">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <p class="contact__loading-loader--text" data-translate="CONTACT.WAITING">One moment!</p>
+          </div>
+        </div>
+
+        <div class="contact__thankyou">
+          <span class="material-icons">
+            waving_hand
+          </span>
+          <p class="contact__thankyou--text" data-translate="CONTACT.THANK_YOU">
+            Thank you! I'll reply to this message.
+          </p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p class="footer__item" data-translate="FOOTER.TITLE">
+      Developed with much ❤️
+    </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="./scripts/globals.js"></script>
+  <script src="./scripts/form.js"></script>
   <script src="./scripts/header.js"></script>
   <script src="./scripts/i18n/english.js"></script>
   <script src="./scripts/i18n/portuguese.js"></script>
   <script src="./scripts/internationalization.js"></script>
-  <script>
-    const loaderElement = document.querySelector('.loader');
-    setTimeout(() => {
-      loaderElement.style.opacity = 0;
-      setTimeout(() => {
-        loaderElement.style.display = 'none';
-      }, 1000);
-    }, 400);
-  </script>
 </body>
 </html>

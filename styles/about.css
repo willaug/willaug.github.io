@@ -28,12 +28,13 @@
 }
 
 .about .about__description .about__description-button {
-  cursor: pointer;
+  display: inline-block;
   font-size: 18px;
   margin-top: 25px;
   font-weight: 500;
   padding: 10px 40px;
   border-radius: 8px;
+  text-decoration: none;
   color: var(--purple-color);
   background-color: transparent;
   transition: all .3s ease-in-out;

@@ -3,6 +3,7 @@ const PT_INTERNATIONALIZATION = {
   HEADER: {
     ABOUT: 'Sobre',
     SERVICES: 'Serviços',
+    SKILLS: 'Habilidades',
     CONTACT: 'Contato'
   },
   PRESENTATION: {
@@ -30,5 +31,21 @@ const PT_INTERNATIONALIZATION = {
   },
   SKILLS: {
     TITLE: 'Habilidades'
+  },
+  CONTACT: {
+    TITLE: 'Contato',
+    WAITING: 'Enviando...',
+    THANK_YOU: 'Obrigado! Responderei este e-mail o mais rápido possível.',
+    FORM: {
+      NAME: 'Seu nome',
+      EMAIL: 'Seu e-mail',
+      SUBJECT: 'Assunto',
+      MESSAGE: 'Mensagem',
+      SEND: 'Enviar',
+      ERR: 'Um erro inesperado ocorreu!'
+    }
+  },
+  FOOTER: {
+    TITLE: 'Desenvolvido com muito ❤️'
   }
 }
